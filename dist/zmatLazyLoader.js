@@ -2,7 +2,7 @@
  * ! ZmatLazyLoader
  * ? https://github.com/matinsoleymni/ZmatLazyLoader
  *  MIT License
- * @author MatinSoleymani
+ * @author MatinSoleymani - Zmat24
  */
 
 /**
