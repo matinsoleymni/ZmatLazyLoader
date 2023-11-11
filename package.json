@@ -1,0 +1,25 @@
+{
+  "name": "zmatlazyloader",
+  "version": "1.0.0",
+  "description": "library for handel lazyLoade with vanilla js",
+  "main": "dist/zmatLazyLoader.js",
+  "scripts": {
+    "runTail": "npx tailwindcss -i assets/css/base.css -o assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matinsoleymni/ZmatLazyLoader.git"
+  },
+  "keywords": [
+    "lazyLoading",
+    "lazyLoad",
+    "lazyload",
+    "jsLazyLoad"
+  ],
+  "author": "MatinSoleymani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matinsoleymni/ZmatLazyLoader/issues"
+  },
+  "homepage": "https://github.com/matinsoleymni/ZmatLazyLoader#readme"
+}
