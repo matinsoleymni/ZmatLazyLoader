@@ -4,7 +4,7 @@
   "description": "library for handel lazyLoade with vanilla js",
   "main": "dist/zmatLazyLoader.js",
   "scripts": {
-    "runTail": "npx tailwindcss -i assets/css/base.css -o assets/css/style.css"
+    "Tail": "npx tailwindcss -i assets/css/base.css -o assets/css/style.css --watch" 
   },
   "repository": {
     "type": "git",

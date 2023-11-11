@@ -36,6 +36,18 @@ export function addAttr(element , elementAttrs){
 
 /**
  * 
+ * @param {Element} element 
+ * @param {Object} places
+ * @returns Void 
+ */
+export function to(element , places){
+    places.forEach(place => {
+        document.querySelector(place).appendChild(element)
+    })
+}
+
+/**
+ * 
  * @param {URL | String | File} url 
  * @param {Object} options 
  * @param {Boolean} group 
@@ -45,14 +57,17 @@ export function load(url , options , group = 0){
     if(isLoaded(options.id ?? "zmatLoader" , group) == "Loaded" && !group){
         return;
     }
-    let myElem = document.createElement(options.type ?? "h1")
-    myElem.src = url
-    myElem.id = options.id ?? "zmatLoader"
-    myElem.setAttribute("class" , options.class ?? "")
-    addAttr(myElem , options.attr)
-    document.querySelector(`${options.parent ?? "body"}`).appendChild(myElem)
+    let loadElem = document.createElement(options.type ?? "h1")
+    loadElem.src = url
+    loadElem.id = options.id ?? "zmatLoader"
+    loadElem.setAttribute("class" , options.class ?? "")
+    addAttr(loadElem , options.attr)
+    if(options.to){
+        to(loadElem , options.to)
+    }
+    document.querySelector(`${options.parent ?? "body"}`).appendChild(loadElem)
     console.group("Loaded")
-    console.info(myElem);
+    console.info(loadElem);
     console.groupEnd()
 }
 
